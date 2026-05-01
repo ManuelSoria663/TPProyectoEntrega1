@@ -9,7 +9,7 @@ public class EventosController : ControllerBase
         _handler = handler;
     }
 
-    // GET: api/eventos/5
+    
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
@@ -21,7 +21,6 @@ public class EventosController : ControllerBase
         return Ok(evento); // 200
     }
 
-    // POST: api/eventos
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] Evento entity)
     {
