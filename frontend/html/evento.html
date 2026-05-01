@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento</title>
+
+    <link rel="stylesheet" href="../css/evento.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Concierto de Rock</h1>
+    </header>
+
+    <div class="contenedor-general">
+
+        <div class="sector">
+            <h2>Sector VIP</h2>
+
+            <div class="butacas">
+
+                <div class="asiento disponible">1</div>
+                <div class="asiento disponible">2</div>
+                <div class="asiento reservado">3</div>
+                <div class="asiento vendido">4</div>
+                <div class="asiento disponible">5</div>
+                <div class="asiento disponible">6</div>
+
+            </div>
+        </div>
+
+        <div class="sector">
+            <h2>Sector Campo</h2>
+
+            <div class="butacas">
+
+                <div class="asiento disponible">1</div>
+                <div class="asiento vendido">2</div>
+                <div class="asiento reservado">3</div>
+                <div class="asiento disponible">4</div>
+                <div class="asiento disponible">5</div>
+                <div class="asiento vendido">6</div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contenedor-boton">
+        <button onclick="volver()">Volver</button>
+    </div>
+
+    <script>
+        function volver() {
+            window.location.href = "../index.html";
+        }
+    </script>
+
+</body>
+</html>
