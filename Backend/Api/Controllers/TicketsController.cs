@@ -17,9 +17,9 @@ public class TicketsController : ControllerBase
             var ticket = await _handler.HandleReserva(request);
             return Ok(ticket); // 200 OK
         }
-        catch (ButacaOcupadaException ex) // Excepción lanzada por tu Handler
+        catch (ButacaOcupadaException ex) 
         {
-            // 409 Conflict - Clave para tu TP de Ticketing
+            // 409 
             return Conflict("La butaca ya fue reservada por otro usuario."); 
         }
         catch (ArgumentException)
